@@ -2,13 +2,47 @@
 <html>
     <head>
         <meta name="viewport" content="width = device-width, initial-scale = 1">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Oranienbaum&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora&family=Oranienbaum&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+        <script src="../JS/inded.js" async ></script>
     </head>
     <body>
-        <header>
+        <div class="header">
+            <div class = "logo">
+                <a href="index.html">Cory Von Feldt</a>
+            </div>
             <nav>
-                
+                <ul>
+                    <li><a href="#" >About Me</a></li>
+                    <li><a href="#myProjects" >Projects</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
+        <div class="main">
+            <br>
+            <div class = "box">
+            <div class = "aboutMe">
+                <h2>About Me</h2>
+                <p>My name is Cory Von Feldt. I have been learning how to code for about seven months. 
+                    I have learned how to code in HTML, CSS, and some JavaScript. I would like to learn more JavaScript, 
+                    so that I can build interactive websites. 
+                    <br>
+                    <p>I am learning to code, because I want to be able to design a website for my online business. My business partner and I 
+                        currently have to rely on a website building/hosting site. This is fine for now, but as we grow, we want to add 
+                        more features and create an app. To do both of these, we will need to create our own site, with our own database.
+                    </p>
+                </p>
+            </div>
+            <div class = "picture">
+                <img src="../resources/IMG_0723-2.jpg">
+            </div>
+            </div>
+            <div class="projects">
+                <h2 id="myProjects">My Projects</h2>
+                <h4 onclick="showHideLink()" id="gamingCompany">Gaming Company</h4>
+                <p class="companyLink hide">Link to Project</p>
+            </div>
+        </div>
     </body>
 </html>

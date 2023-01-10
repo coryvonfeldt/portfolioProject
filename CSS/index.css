@@ -1,0 +1,181 @@
+/* Root and Body elements */
+
+html {
+    font-size: 16px;
+    font-family: "Lora";
+}
+body {
+    margin: 0 auto;
+    max-width: 70rem; 
+    color: rgb(192, 190, 190);
+    background-color: rgb(70, 70, 70);
+}
+
+
+/* Header, nav, and links */
+
+.header {
+    width: 100%;
+    height: 5rem;
+    margin-top: 0px;
+    background-color: rgb(0, 187, 255);
+    padding-top: 2rem;
+    border-radius: 0.4rem;
+}
+
+a {
+    text-decoration: none;
+    transition: font-size 0.1s linear 0s;
+    text-transform: uppercase;
+    color: rgb(48, 48, 48);
+}
+
+a:hover {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.logo {
+    font-size: 1.5rem ;
+    float: left;
+    text-decoration: none;
+    font-family: "Lora";
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.logo a:hover {
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+nav {
+    margin-right: 1.5rem;
+}
+nav li {
+    list-style-type: none;
+    float: right;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-family: "Lora";
+    position: relative;
+}
+nav a::before {
+    height: 2px;
+    width: 0%;
+    content: '';
+    display: block;
+    background-color: rgb(42, 42, 42);
+    position: absolute;
+   
+    transition: width 0.2s ease-out 0s;
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+/* About me section with image */
+
+.box {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+.aboutMe {
+    width: 70%;
+}
+.aboutMe h2 {
+    font-weight: 700;
+    color: rgb(0, 187, 255);
+}
+.aboutMe p {
+    line-height: 1.5rem;
+}
+.picture {
+    max-width: 30%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.picture img {
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+/* My Projects */
+.projects {
+    margin-top: 3rem;
+}
+.projects h2 {
+    color: rgb(0, 187, 255);
+}
+#gamingCompany {
+    transition: font-size 0.1s ease-out 0s;
+    display: inline;
+}
+#gamingCompany:hover {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.companyLink {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+
+
+/*  Media Queries */
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+    body {
+        margin: 0 auto;
+        width: 50rem;
+    }
+    .aboutMe {
+        width: 60%;
+    }
+    .picture img {
+        width: 100%;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    body {
+        margin: 0 auto;
+        width: 30rem;
+    }
+    .logo {
+        font-size: 1.15rem;
+    }
+    nav li {
+        font-size: 0.75rem;
+        margin-left: 1rem;
+    }
+    a:hover {
+        font-size: 0.9rem;
+    }
+    .logo a:hover {
+        font-size: 1.25rem;
+    }
+    .box {
+        display: inline-block;
+    }
+    .aboutMe {
+        width: 100%;
+    }
+    .picture {
+        max-width: 50%;
+    }
+    .picture img {
+       width: 100%;
+       margin-left: 0rem;
+        margin-top: 0rem;
+        overflow: visible;
+    }
+}
